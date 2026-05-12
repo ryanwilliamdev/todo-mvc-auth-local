@@ -29,7 +29,7 @@ app.use(
     resave: false,
     saveUninitialized: false,
     store: MongoStore.create({
-      mongoUrl: process.env.DB_STRING,
+      mongoUrl: process.env.MONGO_URL,
     })
   })
 )
